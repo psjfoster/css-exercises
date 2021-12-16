@@ -6,22 +6,38 @@ body {
 .card {
   width: 400px;
   background: #fff;
+  padding: 8px;
   margin: 16px auto;
 }
 
 .title {
   background: #e3f4ff;
+  margin-top: 0px; 
+  /* for some reason, top margin defaulted to something big! 
+  Don't always assume that it has been defined elsewhere... */
+  margin-bottom: 8px;
+  padding: 8px;
+  font-size: 16px;
 }
 
 .content {
   background: #e3f4ff;
+  padding: 16px 8px;
+  margin-bottom: 8px;
 }
 
 .button-container {
+  text-align: center;
   background: #e3f4ff;
+  padding: 8px;
 }
 
 button {
   background: white;
   border: 1px solid #eee;
+  display: block;
+  margin: 0 auto;
+  /* don't forget that block-style fills the available space, 
+  hence auto to center its left-right margins */
+  padding: 8px 24px;
 }
